@@ -1,0 +1,51 @@
+/* ==============================================
+   OSCARS SPA - Design System Variables
+   ============================================== */
+
+:root {
+  /* === Colors - Hollywood Classic === */
+  --color-gold: #D4AF37;
+  --color-gold-light: #F4E4A1;
+  --color-gold-dark: #9A7B0A;
+  --color-black: #080808;
+  --color-black-light: #121212;
+  --color-red-carpet: #8B0000;
+  --color-red-light: #B22222;
+  --color-cream: #FFF8DC;
+  --color-white: #FFFFFF;
+  
+  /* === Gradients === */
+  --gradient-gold: linear-gradient(135deg, var(--color-gold-dark) 0%, var(--color-gold) 50%, var(--color-gold-light) 100%);
+  --gradient-dark: linear-gradient(180deg, var(--color-black) 0%, var(--color-black-light) 100%);
+  --gradient-spotlight: radial-gradient(ellipse at center, rgba(212, 175, 55, 0.15) 0%, transparent 70%);
+  
+  /* === Shadows === */
+  --shadow-gold: 0 0 20px rgba(212, 175, 55, 0.4);
+  --shadow-gold-intense: 0 0 40px rgba(212, 175, 55, 0.6);
+  --shadow-card: 0 10px 40px rgba(0, 0, 0, 0.5);
+  --shadow-text: 0 2px 10px rgba(0, 0, 0, 0.8);
+  
+  /* === Typography === */
+  --font-display: 'Montserrat', 'Segoe UI', sans-serif;
+  --font-body: 'Montserrat', 'Segoe UI', sans-serif;
+  
+  /* === Spacing === */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-xxl: 5rem;
+  
+  /* === Border Radius === */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  
+  /* === Transitions === */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.4s ease;
+  --transition-slow: 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-dramatic: 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}

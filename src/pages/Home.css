@@ -1,0 +1,226 @@
+.home-page {
+  height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-lg);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Iluminación de escenario */
+.stage-light {
+  position: fixed;
+  bottom: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200%;
+  height: 80%;
+  background: 
+    radial-gradient(
+      ellipse 50% 35% at 50% 100%,
+      rgba(212, 175, 55, 0.25) 0%,
+      rgba(212, 175, 55, 0.12) 25%,
+      rgba(212, 175, 55, 0.05) 45%,
+      transparent 65%
+    ),
+    radial-gradient(
+      ellipse 80% 50% at 50% 100%,
+      rgba(255, 215, 0, 0.08) 0%,
+      transparent 50%
+    );
+  pointer-events: none;
+  z-index: 0;
+  animation: stageLightBreathing 6s ease-in-out infinite;
+}
+
+@keyframes stageLightBreathing {
+  0%, 100% {
+    opacity: 0.6;
+    transform: translateX(-50%) scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: translateX(-50%) scale(1.08);
+  }
+}
+
+/* Contenido */
+.home-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xxl);
+}
+
+/* Hero */
+.home-hero {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+/* Oscar Statue 3D Effect */
+.oscar-container {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.oscar-statue {
+  height: clamp(180px, 28vh, 280px);
+  width: auto;
+  filter: 
+    drop-shadow(0 0 40px rgba(212, 175, 55, 0.3))
+    drop-shadow(0 0 80px rgba(212, 175, 55, 0.15))
+    drop-shadow(0 30px 60px rgba(0, 0, 0, 0.3));
+  animation: oscarFloat 5s ease-in-out infinite;
+  transform-style: preserve-3d;
+}
+
+@keyframes oscarFloat {
+  0%, 100% {
+    transform: translateY(0) rotateY(-3deg);
+    filter: 
+      drop-shadow(0 0 40px rgba(212, 175, 55, 0.3))
+      drop-shadow(0 0 80px rgba(212, 175, 55, 0.15))
+      drop-shadow(0 30px 60px rgba(0, 0, 0, 0.3));
+  }
+  50% {
+    transform: translateY(-12px) rotateY(3deg);
+    filter: 
+      drop-shadow(0 0 50px rgba(212, 175, 55, 0.4))
+      drop-shadow(0 0 100px rgba(212, 175, 55, 0.2))
+      drop-shadow(0 40px 70px rgba(0, 0, 0, 0.25));
+  }
+}
+
+.home-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 6vw, 4.5rem);
+  font-weight: 700;
+  color: var(--color-gold);
+  text-transform: uppercase;
+  letter-spacing: clamp(6px, 1.5vw, 12px);
+  line-height: 1.1;
+  text-shadow: 
+    0 0 10px rgba(212, 175, 55, 0.5),
+    0 0 30px rgba(212, 175, 55, 0.3),
+    0 0 60px rgba(212, 175, 55, 0.15),
+    0 4px 20px rgba(0, 0, 0, 0.8);
+  animation: titleGlow 4s ease-in-out infinite;
+}
+
+@keyframes titleGlow {
+  0%, 100% {
+    text-shadow: 
+      0 0 10px rgba(212, 175, 55, 0.5),
+      0 0 30px rgba(212, 175, 55, 0.3),
+      0 0 60px rgba(212, 175, 55, 0.15),
+      0 4px 20px rgba(0, 0, 0, 0.8);
+  }
+  50% {
+    text-shadow: 
+      0 0 15px rgba(212, 175, 55, 0.6),
+      0 0 40px rgba(212, 175, 55, 0.4),
+      0 0 80px rgba(212, 175, 55, 0.2),
+      0 4px 20px rgba(0, 0, 0, 0.8);
+  }
+}
+
+.home-year {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 4.5vw, 3rem);
+  font-weight: 400;
+  color: var(--color-gold-light);
+  letter-spacing: clamp(10px, 2.5vw, 25px);
+  border-top: 1px solid rgba(212, 175, 55, 0.25);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+  padding: 0 var(--space-lg) var(--space-sm) var(--space-xl);
+  text-shadow: 
+    0 0 20px rgba(244, 228, 161, 0.3),
+    0 2px 10px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(212, 175, 55, 0.05) 50%, 
+    transparent 100%);
+}
+
+.home-subtitle {
+  font-size: 1rem;
+  color: var(--color-cream);
+  opacity: 0.7;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.home-cta {
+  margin-top: var(--space-md);
+  font-size: 1rem;
+  padding: var(--space-md) var(--space-xl);
+}
+
+/* Categorías preview */
+.categories-preview {
+  width: 100%;
+  text-align: center;
+}
+
+.preview-title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--color-gold);
+  margin-bottom: var(--space-lg);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.categories-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-sm);
+}
+
+.category-chip {
+  background: rgba(212, 175, 55, 0.1);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  color: var(--color-cream);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-xl);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.category-chip:hover {
+  border-color: var(--color-gold);
+  color: var(--color-gold);
+}
+
+@media (max-width: 900px) {
+  .home-page {
+    padding-top: 100px;
+  }
+  
+  .trophy-large {
+    font-size: 5rem;
+  }
+  
+  .home-title {
+    letter-spacing: 4px;
+  }
+  
+  .home-year {
+    letter-spacing: 10px;
+  }
+}

@@ -1,0 +1,69 @@
+.winner-reveal-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  background: var(--gradient-gold);
+  color: var(--color-black);
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: var(--space-md) var(--space-xl);
+  border: none;
+  border-radius: var(--radius-xl);
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: var(--shadow-gold);
+  animation: buttonPulse 2s ease-in-out infinite;
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.winner-reveal-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.winner-reveal-btn:hover::before {
+  left: 100%;
+}
+
+.winner-reveal-btn:disabled {
+  cursor: default;
+  animation: none;
+}
+
+.winner-reveal-btn.revealed {
+  background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-light) 100%);
+  animation: none;
+  pointer-events: none;
+}
+
+.btn-icon {
+  font-size: 2rem;
+  animation: trophyShine 2s ease-in-out infinite;
+}
+
+.btn-text {
+  text-shadow: none;
+}
+
+@media (max-width: 900px) {
+  .winner-reveal-btn {
+    font-size: 1.2rem;
+    padding: var(--space-md) var(--space-xl);
+  }
+}

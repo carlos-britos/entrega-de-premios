@@ -1,0 +1,246 @@
+{
+  "eventTitle": "La Noche de los Premios",
+  "eventYear": "2025",
+  "categories": [
+    {
+      "id": "mejor-pelicula",
+      "name": "Mejor Película",
+      "nominees": [
+        { "id": "nom-1", "name": "El Último Horizonte", "image": "/images/nominees/placeholder.svg", "info": "Director: María González" },
+        { "id": "nom-2", "name": "Sombras del Ayer", "image": "/images/nominees/placeholder.svg", "info": "Director: Carlos Ruiz" },
+        { "id": "nom-3", "name": "Entre Dos Mundos", "image": "/images/nominees/placeholder.jpg", "info": "Director: Ana López" },
+        { "id": "nom-4", "name": "Caminos Cruzados", "image": "/images/nominees/placeholder.jpg", "info": "Director: Pablo Martín" },
+        { "id": "nom-5", "name": "La Luz Interior", "image": "/images/nominees/placeholder.jpg", "info": "Director: Laura Torres" }
+      ],
+      "winnerId": "nom-1"
+    },
+    {
+      "id": "mejor-director",
+      "name": "Mejor Director",
+      "nominees": [
+        { "id": "dir-1", "name": "María González", "image": "/images/nominees/placeholder.jpg", "info": "El Último Horizonte" },
+        { "id": "dir-2", "name": "Carlos Ruiz", "image": "/images/nominees/placeholder.jpg", "info": "Sombras del Ayer" },
+        { "id": "dir-3", "name": "Ana López", "image": "/images/nominees/placeholder.jpg", "info": "Entre Dos Mundos" },
+        { "id": "dir-4", "name": "Pablo Martín", "image": "/images/nominees/placeholder.jpg", "info": "Caminos Cruzados" },
+        { "id": "dir-5", "name": "Roberto Sánchez", "image": "/images/nominees/placeholder.jpg", "info": "Ecos del Silencio" }
+      ],
+      "winnerId": "dir-3"
+    },
+    {
+      "id": "mejor-actor",
+      "name": "Mejor Actor",
+      "nominees": [
+        { "id": "act-1", "name": "Juan Pérez", "image": "/images/nominees/placeholder.jpg", "info": "El Último Horizonte" },
+        { "id": "act-2", "name": "Miguel Ángel Vega", "image": "/images/nominees/placeholder.jpg", "info": "Sombras del Ayer" },
+        { "id": "act-3", "name": "Fernando Castro", "image": "/images/nominees/placeholder.jpg", "info": "Entre Dos Mundos" },
+        { "id": "act-4", "name": "Diego Morales", "image": "/images/nominees/placeholder.jpg", "info": "Caminos Cruzados" },
+        { "id": "act-5", "name": "Andrés Navarro", "image": "/images/nominees/placeholder.jpg", "info": "La Luz Interior" }
+      ],
+      "winnerId": "act-2"
+    },
+    {
+      "id": "mejor-actriz",
+      "name": "Mejor Actriz",
+      "nominees": [
+        { "id": "atr-1", "name": "Sofía Ramírez", "image": "/images/nominees/placeholder.jpg", "info": "El Último Horizonte" },
+        { "id": "atr-2", "name": "Elena Fernández", "image": "/images/nominees/placeholder.jpg", "info": "Sombras del Ayer" },
+        { "id": "atr-3", "name": "Lucía Mendoza", "image": "/images/nominees/placeholder.jpg", "info": "Entre Dos Mundos" },
+        { "id": "atr-4", "name": "Carmen Delgado", "image": "/images/nominees/placeholder.jpg", "info": "La Luz Interior" },
+        { "id": "atr-5", "name": "Valentina Cruz", "image": "/images/nominees/placeholder.jpg", "info": "Voces en la Niebla" }
+      ],
+      "winnerId": "atr-4"
+    },
+    {
+      "id": "mejor-guion-original",
+      "name": "Mejor Guión Original",
+      "nominees": [
+        { "id": "gui-1", "name": "Historias del Mañana", "image": "/images/nominees/placeholder.jpg", "info": "Escritor: Julia Herrera" },
+        { "id": "gui-2", "name": "El Silencio Habla", "image": "/images/nominees/placeholder.jpg", "info": "Escritor: Marco Díaz" },
+        { "id": "gui-3", "name": "Memorias Perdidas", "image": "/images/nominees/placeholder.jpg", "info": "Escritor: Isabel Torres" },
+        { "id": "gui-4", "name": "Un Nuevo Amanecer", "image": "/images/nominees/placeholder.jpg", "info": "Escritor: Pedro Alonso" },
+        { "id": "gui-5", "name": "Reflejos", "image": "/images/nominees/placeholder.jpg", "info": "Escritor: Clara Vidal" }
+      ],
+      "winnerId": "gui-3"
+    },
+    {
+      "id": "mejor-fotografia",
+      "name": "Mejor Fotografía",
+      "nominees": [
+        { "id": "fot-1", "name": "Paisajes del Alma", "image": "/images/nominees/placeholder.jpg", "info": "DF: Rodrigo Prieto" },
+        { "id": "fot-2", "name": "Luz y Sombra", "image": "/images/nominees/placeholder.jpg", "info": "DF: Emmanuel Lubezki" },
+        { "id": "fot-3", "name": "El Color del Tiempo", "image": "/images/nominees/placeholder.jpg", "info": "DF: Janusz Kamiński" },
+        { "id": "fot-4", "name": "Horizontes Lejanos", "image": "/images/nominees/placeholder.jpg", "info": "DF: Roger Deakins" },
+        { "id": "fot-5", "name": "Contrastes", "image": "/images/nominees/placeholder.jpg", "info": "DF: Hoyte van Hoytema" }
+      ],
+      "winnerId": "fot-4"
+    },
+    {
+      "id": "mejor-musica",
+      "name": "Mejor Música Original",
+      "nominees": [
+        { "id": "mus-1", "name": "Sinfonía del Destino", "image": "/images/nominees/placeholder.jpg", "info": "Compositor: Hans Zimmer" },
+        { "id": "mus-2", "name": "Ecos del Corazón", "image": "/images/nominees/placeholder.jpg", "info": "Compositor: John Williams" },
+        { "id": "mus-3", "name": "Melodías Eternas", "image": "/images/nominees/placeholder.jpg", "info": "Compositor: Alexandre Desplat" },
+        { "id": "mus-4", "name": "Ritmos Ocultos", "image": "/images/nominees/placeholder.jpg", "info": "Compositor: Ludovic Bource" },
+        { "id": "mus-5", "name": "Notas del Silencio", "image": "/images/nominees/placeholder.jpg", "info": "Compositor: Thomas Newman" }
+      ],
+      "winnerId": "mus-1"
+    },
+    {
+      "id": "mejor-montaje",
+      "name": "Mejor Montaje",
+      "nominees": [
+        { "id": "mon-1", "name": "Cortes Precisos", "image": "/images/nominees/placeholder.jpg", "info": "Editor: Thelma Schoonmaker" },
+        { "id": "mon-2", "name": "Flujo Narrativo", "image": "/images/nominees/placeholder.jpg", "info": "Editor: Lee Smith" },
+        { "id": "mon-3", "name": "Ritmo Perfecto", "image": "/images/nominees/placeholder.jpg", "info": "Editor: William Goldenberg" },
+        { "id": "mon-4", "name": "Transiciones Mágicas", "image": "/images/nominees/placeholder.jpg", "info": "Editor: Paul Machliss" },
+        { "id": "mon-5", "name": "El Arte del Corte", "image": "/images/nominees/placeholder.jpg", "info": "Editor: Sandra Adair" }
+      ],
+      "winnerId": "mon-2"
+    },
+    {
+      "id": "mejor-vestuario",
+      "name": "Mejor Diseño de Vestuario",
+      "nominees": [
+        { "id": "ves-1", "name": "Época Dorada", "image": "/images/nominees/placeholder.jpg", "info": "Diseñador: Sandy Powell" },
+        { "id": "ves-2", "name": "Elegancia Atemporal", "image": "/images/nominees/placeholder.jpg", "info": "Diseñador: Colleen Atwood" },
+        { "id": "ves-3", "name": "Fantasía y Color", "image": "/images/nominees/placeholder.jpg", "info": "Diseñador: Ruth E. Carter" },
+        { "id": "ves-4", "name": "Minimalismo Chic", "image": "/images/nominees/placeholder.jpg", "info": "Diseñador: Jacqueline Durran" },
+        { "id": "ves-5", "name": "Estilos del Mundo", "image": "/images/nominees/placeholder.jpg", "info": "Diseñador: Jenny Beavan" }
+      ],
+      "winnerId": "ves-3"
+    },
+    {
+      "id": "mejor-efectos",
+      "name": "Mejores Efectos Visuales",
+      "nominees": [
+        { "id": "efx-1", "name": "Mundos Imposibles", "image": "/images/nominees/placeholder.jpg", "info": "Supervisor: John Knoll" },
+        { "id": "efx-2", "name": "Realidad Aumentada", "image": "/images/nominees/placeholder.jpg", "info": "Supervisor: Dan Lemmon" },
+        { "id": "efx-3", "name": "Dimensiones Paralelas", "image": "/images/nominees/placeholder.jpg", "info": "Supervisor: Paul Franklin" },
+        { "id": "efx-4", "name": "Magia Digital", "image": "/images/nominees/placeholder.jpg", "info": "Supervisor: Joe Letteri" },
+        { "id": "efx-5", "name": "Ilusiones Perfectas", "image": "/images/nominees/placeholder.jpg", "info": "Supervisor: Chris Lawrence" }
+      ],
+      "winnerId": "efx-3"
+    },
+    {
+      "id": "mejor-sonido",
+      "name": "Mejor Sonido",
+      "nominees": [
+        { "id": "son-1", "name": "Paisajes Sonoros", "image": "/images/nominees/placeholder.jpg", "info": "Mezclador: Gary Rydstrom" },
+        { "id": "son-2", "name": "Inmersión Total", "image": "/images/nominees/placeholder.jpg", "info": "Mezclador: Richard King" },
+        { "id": "son-3", "name": "Ecos del Espacio", "image": "/images/nominees/placeholder.jpg", "info": "Mezclador: Mark Mangini" },
+        { "id": "son-4", "name": "Frecuencias Ocultas", "image": "/images/nominees/placeholder.jpg", "info": "Mezclador: Randy Thom" },
+        { "id": "son-5", "name": "Sinfonía Ambiental", "image": "/images/nominees/placeholder.jpg", "info": "Mezclador: Skip Lievsay" }
+      ],
+      "winnerId": "son-2"
+    },
+    {
+      "id": "mejor-maquillaje",
+      "name": "Mejor Maquillaje y Peinado",
+      "nominees": [
+        { "id": "maq-1", "name": "Transformaciones", "image": "/images/nominees/placeholder.jpg", "info": "Artista: Kazuhiro Tsuji" },
+        { "id": "maq-2", "name": "Criaturas Fantásticas", "image": "/images/nominees/placeholder.jpg", "info": "Artista: Rick Baker" },
+        { "id": "maq-3", "name": "Época Victoriana", "image": "/images/nominees/placeholder.jpg", "info": "Artista: Peter Swords King" },
+        { "id": "maq-4", "name": "Belleza Natural", "image": "/images/nominees/placeholder.jpg", "info": "Artista: Naomi Donne" },
+        { "id": "maq-5", "name": "Personajes Únicos", "image": "/images/nominees/placeholder.jpg", "info": "Artista: Kazu Hiro" }
+      ],
+      "winnerId": "maq-1"
+    },
+    {
+      "id": "mejor-direccion-arte",
+      "name": "Mejor Diseño de Producción",
+      "nominees": [
+        { "id": "art-1", "name": "Ciudades del Futuro", "image": "/images/nominees/placeholder.jpg", "info": "Diseñador: Rick Carter" },
+        { "id": "art-2", "name": "Castillos Medievales", "image": "/images/nominees/placeholder.jpg", "info": "Diseñador: Stuart Craig" },
+        { "id": "art-3", "name": "Interiores Modernos", "image": "/images/nominees/placeholder.jpg", "info": "Diseñador: Adam Stockhausen" },
+        { "id": "art-4", "name": "Mundos de Fantasía", "image": "/images/nominees/placeholder.jpg", "info": "Diseñador: Hannah Beachler" },
+        { "id": "art-5", "name": "Épocas Pasadas", "image": "/images/nominees/placeholder.jpg", "info": "Diseñador: Dennis Gassner" }
+      ],
+      "winnerId": "art-4"
+    },
+    {
+      "id": "mejor-actor-secundario",
+      "name": "Mejor Actor de Reparto",
+      "nominees": [
+        { "id": "acs-1", "name": "Roberto Méndez", "image": "/images/nominees/placeholder.jpg", "info": "Sombras del Ayer" },
+        { "id": "acs-2", "name": "Julián Herrera", "image": "/images/nominees/placeholder.jpg", "info": "Entre Dos Mundos" },
+        { "id": "acs-3", "name": "Oscar Villalobos", "image": "/images/nominees/placeholder.jpg", "info": "Caminos Cruzados" },
+        { "id": "acs-4", "name": "Martín Agosto", "image": "/images/nominees/placeholder.jpg", "info": "La Luz Interior" },
+        { "id": "acs-5", "name": "Rafael Torres", "image": "/images/nominees/placeholder.jpg", "info": "Ecos del Silencio" }
+      ],
+      "winnerId": "acs-3"
+    },
+    {
+      "id": "mejor-actriz-secundaria",
+      "name": "Mejor Actriz de Reparto",
+      "nominees": [
+        { "id": "atrs-1", "name": "Patricia Vega", "image": "/images/nominees/placeholder.jpg", "info": "El Último Horizonte" },
+        { "id": "atrs-2", "name": "Mónica Herrera", "image": "/images/nominees/placeholder.jpg", "info": "Sombras del Ayer" },
+        { "id": "atrs-3", "name": "Daniela Moreno", "image": "/images/nominees/placeholder.jpg", "info": "Entre Dos Mundos" },
+        { "id": "atrs-4", "name": "Alejandra Ruiz", "image": "/images/nominees/placeholder.jpg", "info": "La Luz Interior" },
+        { "id": "atrs-5", "name": "Inés Castillo", "image": "/images/nominees/placeholder.jpg", "info": "Voces en la Niebla" }
+      ],
+      "winnerId": "atrs-2"
+    },
+    {
+      "id": "mejor-pelicula-animada",
+      "name": "Mejor Película Animada",
+      "nominees": [
+        { "id": "ani-1", "name": "El Viaje de Luna", "image": "/images/nominees/placeholder.jpg", "info": "Estudio: Pixar" },
+        { "id": "ani-2", "name": "Aventuras en el Bosque", "image": "/images/nominees/placeholder.jpg", "info": "Estudio: Ghibli" },
+        { "id": "ani-3", "name": "Robots y Sueños", "image": "/images/nominees/placeholder.jpg", "info": "Estudio: DreamWorks" },
+        { "id": "ani-4", "name": "El Reino Perdido", "image": "/images/nominees/placeholder.jpg", "info": "Estudio: Disney" },
+        { "id": "ani-5", "name": "Historias de Papel", "image": "/images/nominees/placeholder.jpg", "info": "Estudio: Laika" }
+      ],
+      "winnerId": "ani-2"
+    },
+    {
+      "id": "mejor-documental",
+      "name": "Mejor Documental",
+      "nominees": [
+        { "id": "doc-1", "name": "Voces del Planeta", "image": "/images/nominees/placeholder.jpg", "info": "Director: David Attenborough" },
+        { "id": "doc-2", "name": "La Historia Olvidada", "image": "/images/nominees/placeholder.jpg", "info": "Director: Ken Burns" },
+        { "id": "doc-3", "name": "Fronteras Invisibles", "image": "/images/nominees/placeholder.jpg", "info": "Director: Ava DuVernay" },
+        { "id": "doc-4", "name": "Océanos de Esperanza", "image": "/images/nominees/placeholder.jpg", "info": "Director: James Cameron" },
+        { "id": "doc-5", "name": "Cambios Silenciosos", "image": "/images/nominees/placeholder.jpg", "info": "Director: Werner Herzog" }
+      ],
+      "winnerId": "doc-1"
+    },
+    {
+      "id": "mejor-pelicula-extranjera",
+      "name": "Mejor Película Internacional",
+      "nominees": [
+        { "id": "ext-1", "name": "La Vida en Colores", "image": "/images/nominees/placeholder.jpg", "info": "País: Francia" },
+        { "id": "ext-2", "name": "Memorias de Tokio", "image": "/images/nominees/placeholder.jpg", "info": "País: Japón" },
+        { "id": "ext-3", "name": "El Río de la Vida", "image": "/images/nominees/placeholder.jpg", "info": "País: India" },
+        { "id": "ext-4", "name": "Invierno en Berlín", "image": "/images/nominees/placeholder.jpg", "info": "País: Alemania" },
+        { "id": "ext-5", "name": "Pasión Flamenca", "image": "/images/nominees/placeholder.jpg", "info": "País: España" }
+      ],
+      "winnerId": "ext-2"
+    },
+    {
+      "id": "mejor-cancion",
+      "name": "Mejor Canción Original",
+      "nominees": [
+        { "id": "can-1", "name": "Dreams of Tomorrow", "image": "/images/nominees/placeholder.jpg", "info": "Artista: Lady Gaga" },
+        { "id": "can-2", "name": "Rise Again", "image": "/images/nominees/placeholder.jpg", "info": "Artista: Beyoncé" },
+        { "id": "can-3", "name": "Into the Light", "image": "/images/nominees/placeholder.jpg", "info": "Artista: Adele" },
+        { "id": "can-4", "name": "Forever More", "image": "/images/nominees/placeholder.jpg", "info": "Artista: Taylor Swift" },
+        { "id": "can-5", "name": "Unbreakable", "image": "/images/nominees/placeholder.jpg", "info": "Artista: Bruno Mars" }
+      ],
+      "winnerId": "can-3"
+    },
+    {
+      "id": "mejor-guion-adaptado",
+      "name": "Mejor Guión Adaptado",
+      "nominees": [
+        { "id": "guia-1", "name": "Basado en Hechos Reales", "image": "/images/nominees/placeholder.jpg", "info": "Escritor: Aaron Sorkin" },
+        { "id": "guia-2", "name": "La Novela Cobró Vida", "image": "/images/nominees/placeholder.jpg", "info": "Escritor: Eric Roth" },
+        { "id": "guia-3", "name": "De Cómic a Cine", "image": "/images/nominees/placeholder.jpg", "info": "Escritor: Drew Goddard" },
+        { "id": "guia-4", "name": "Memorias Adaptadas", "image": "/images/nominees/placeholder.jpg", "info": "Escritor: Tony Kushner" },
+        { "id": "guia-5", "name": "Nueva Versión", "image": "/images/nominees/placeholder.jpg", "info": "Escritor: Gillian Flynn" }
+      ],
+      "winnerId": "guia-1"
+    }
+  ]
+}
