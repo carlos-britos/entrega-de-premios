@@ -92,7 +92,14 @@ const CategoriesList = () => {
                 onClick={() => handleCategoryClick(category.id)}
               >
                 <div className="category-card-content">
-                  <h3 className="category-card-name">{category.name}</h3>
+                  {revealed ? (
+                    <h3 className="category-card-name">{category.name}</h3>
+                  ) : (
+                    <div className="category-card-hidden">
+                      <span className="hidden-icon">🙈</span>
+                      <span className="hidden-text">Categoría oculta</span>
+                    </div>
+                  )}
                   
                   {revealed && (
                     <div className="category-card-winner">

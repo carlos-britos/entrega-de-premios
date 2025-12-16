@@ -3,7 +3,6 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import NomineeCard from '../components/NomineeCard';
 import WinnerReveal from '../components/WinnerReveal';
-import CategoryNav from '../components/CategoryNav';
 import useConfetti from '../hooks/useConfetti';
 import useAudio from '../hooks/useAudio';
 import useRevealedCategories from '../hooks/useRevealedCategories';
@@ -17,7 +16,9 @@ const Category = () => {
   const { playDrumroll, playFanfare, playWhoosh } = useAudio();
   const { revealCategory } = useRevealedCategories();
 
-  const [nomineesRevealed, setNomineesRevealed] = useState(false);
+  const [fullscreenIndex, setFullscreenIndex] = useState(-1); // Fase 1: pantalla completa
+  const [currentRevealIndex, setCurrentRevealIndex] = useState(-1); // Fase 2: fade secuencial
+  const [animationPhase, setAnimationPhase] = useState('fullscreen'); // 'fullscreen' | 'sequential' | 'fadeOut' | 'fadeIn' | 'complete'
   const [winnerRevealed, setWinnerRevealed] = useState(false);
 
   const { categories } = categoriesData;
@@ -31,18 +32,63 @@ const Category = () => {
 
   // Reset state cuando cambia la categoría
   useEffect(() => {
-    setNomineesRevealed(false);
+    setFullscreenIndex(-1);
+    setCurrentRevealIndex(-1);
+    setAnimationPhase('fullscreen');
     setWinnerRevealed(false);
     playWhoosh();
   }, [categoryId, playWhoosh]);
 
-  // Auto-revelar nominados después de un delay
+  // Secuencia de animación de nominados
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setNomineesRevealed(true);
-    }, 800);
-    return () => clearTimeout(timer);
-  }, [categoryId]);
+    const totalNominees = category?.nominees?.length || 0;
+
+    // FASE 1: Mostrar cada nominado en pantalla completa
+    if (animationPhase === 'fullscreen') {
+      const timer = setTimeout(() => {
+        if (fullscreenIndex < totalNominees - 1) {
+          setFullscreenIndex(prev => prev + 1);
+        } else {
+          // Terminó fullscreen, pasar a fase secuencial
+          setAnimationPhase('sequential');
+          setCurrentRevealIndex(-1);
+        }
+      }, fullscreenIndex === -1 ? 800 : 2000);
+      return () => clearTimeout(timer);
+    }
+
+    // FASE 2: Revelar uno por uno con fade
+    if (animationPhase === 'sequential' && currentRevealIndex < totalNominees - 1) {
+      const timer = setTimeout(() => {
+        setCurrentRevealIndex(prev => prev + 1);
+      }, currentRevealIndex === -1 ? 500 : 1000);
+      return () => clearTimeout(timer);
+    }
+
+    // Después del último: iniciar fade out
+    if (animationPhase === 'sequential' && currentRevealIndex === totalNominees - 1) {
+      const timer = setTimeout(() => {
+        setAnimationPhase('fadeOut');
+      }, 1000);
+      return () => clearTimeout(timer);
+    }
+
+    // Fade out completo: iniciar fade in
+    if (animationPhase === 'fadeOut') {
+      const timer = setTimeout(() => {
+        setAnimationPhase('fadeIn');
+      }, 500);
+      return () => clearTimeout(timer);
+    }
+
+    // Fade in completo
+    if (animationPhase === 'fadeIn') {
+      const timer = setTimeout(() => {
+        setAnimationPhase('complete');
+      }, 500);
+      return () => clearTimeout(timer);
+    }
+  }, [fullscreenIndex, currentRevealIndex, animationPhase, category]);
 
   const handleRevealWinner = () => {
     playDrumroll();
@@ -102,8 +148,9 @@ const Category = () => {
               <NomineeCard
                 key={nominee.id}
                 nominee={nominee}
-                index={index}
-                isRevealed={nomineesRevealed}
+                isFullscreen={animationPhase === 'fullscreen' && index === fullscreenIndex}
+                isRevealed={animationPhase !== 'fullscreen' && (index <= currentRevealIndex || animationPhase === 'fadeIn' || animationPhase === 'complete')}
+                isFadedOut={animationPhase === 'fadeOut'}
                 isWinner={nominee.id === category.winnerId}
                 winnerRevealed={winnerRevealed}
               />
@@ -113,17 +160,17 @@ const Category = () => {
 
         {/* Botón de revelar ganador */}
         <AnimatePresence>
-          {nomineesRevealed && (
+          {animationPhase === 'complete' && (
             <motion.div
               className="winner-section"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0 }}
-              transition={{ delay: category.nominees.length * 0.15 + 0.5, duration: 0.6 }}
+              transition={{ delay: 0.3, duration: 0.6 }}
             >
               <WinnerReveal
                 onReveal={handleRevealWinner}
-                isDisabled={!nomineesRevealed}
+                isDisabled={false}
                 isRevealed={winnerRevealed}
               />
             </motion.div>
@@ -160,11 +207,20 @@ const Category = () => {
           )}
         </AnimatePresence>
 
-        {/* Navegación */}
-        <CategoryNav
-          categories={categories}
-          currentIndex={currentIndex}
-        />
+        {/* Botón volver */}
+        <motion.button
+          className="back-to-categories-btn"
+          onClick={() => navigate('/categories')}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 0.5 }}
+          whileHover={{ opacity: 1, scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          transition={{ duration: 0.3 }}
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+        </motion.button>
       </div>
     </div>
   );
