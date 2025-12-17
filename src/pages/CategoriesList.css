@@ -176,6 +176,12 @@
   gap: var(--space-xs);
 }
 
+.category-card-winner .winner-name {
+  font-size: 1.5rem;
+  text-align: left;
+  padding: 0;
+}
+
 .winner-label {
   font-size: 0.7rem;
   text-transform: uppercase;
@@ -188,18 +194,13 @@
   font-family: var(--font-body);
   font-size: 0.95rem;
   color: var(--color-cream);
-  background: rgba(212, 175, 55, 0.1);
-  border: 1px solid rgba(212, 175, 55, 0.2);
+  background: transparent;
+  border: unset;
   border-radius: var(--radius-sm);
   padding: var(--space-xs) var(--space-sm);
   cursor: pointer;
   transition: all 0.2s ease;
   text-align: left;
-}
-
-.winner-name:hover {
-  background: rgba(212, 175, 55, 0.2);
-  border-color: rgba(212, 175, 55, 0.4);
 }
 
 .winner-name.hidden {

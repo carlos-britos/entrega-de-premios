@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import './NomineeCard.css';
 
-const NomineeCard = ({ nominee, isFullscreen, isRevealed, isFadedOut, isWinner, winnerRevealed }) => {
+const NomineeCard = ({ nominee, isFullscreen, isRevealed, isWinner, winnerRevealed }) => {
   const [imageError, setImageError] = useState(false);
 
   // Determinar qué clase aplicar según el estado
@@ -18,7 +18,6 @@ const NomineeCard = ({ nominee, isFullscreen, isRevealed, isFadedOut, isWinner, 
   const getOpacity = () => {
     if (isFullscreen) return 1;
     if (!isRevealed) return 0;
-    if (isFadedOut) return 0;
     return 1;
   };
 
@@ -43,17 +42,6 @@ const NomineeCard = ({ nominee, isFullscreen, isRevealed, isFadedOut, isWinner, 
             <div className="nominee-image-placeholder">
               <span className="placeholder-icon">🎬</span>
             </div>
-          )}
-          {isWinner && winnerRevealed && (
-            <motion.div
-              className="winner-badge"
-              initial={{ scale: 0, rotate: -180 }}
-              animate={{ scale: 1, rotate: 0 }}
-              transition={{ delay: 0.5, duration: 0.6, type: 'spring' }}
-            >
-              <span className="trophy-icon">🏆</span>
-              <span className="winner-text">GANADOR</span>
-            </motion.div>
           )}
         </div>
         <div className="nominee-info">

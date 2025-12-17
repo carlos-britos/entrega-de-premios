@@ -53,7 +53,7 @@ const Category = () => {
           setAnimationPhase('sequential');
           setCurrentRevealIndex(-1);
         }
-      }, fullscreenIndex === -1 ? 800 : 2000);
+      }, fullscreenIndex === -1 ? 500 : 2000);
       return () => clearTimeout(timer);
     }
 
@@ -61,31 +61,15 @@ const Category = () => {
     if (animationPhase === 'sequential' && currentRevealIndex < totalNominees - 1) {
       const timer = setTimeout(() => {
         setCurrentRevealIndex(prev => prev + 1);
-      }, currentRevealIndex === -1 ? 500 : 1000);
+      }, currentRevealIndex === -1 ? 150 : 100);
       return () => clearTimeout(timer);
     }
 
-    // Después del último: iniciar fade out
+    // Después del último: marcar como completo
     if (animationPhase === 'sequential' && currentRevealIndex === totalNominees - 1) {
       const timer = setTimeout(() => {
-        setAnimationPhase('fadeOut');
-      }, 1000);
-      return () => clearTimeout(timer);
-    }
-
-    // Fade out completo: iniciar fade in
-    if (animationPhase === 'fadeOut') {
-      const timer = setTimeout(() => {
-        setAnimationPhase('fadeIn');
-      }, 500);
-      return () => clearTimeout(timer);
-    }
-
-    // Fade in completo
-    if (animationPhase === 'fadeIn') {
-      const timer = setTimeout(() => {
         setAnimationPhase('complete');
-      }, 500);
+      }, 100);
       return () => clearTimeout(timer);
     }
   }, [fullscreenIndex, currentRevealIndex, animationPhase, category]);
@@ -149,8 +133,7 @@ const Category = () => {
                 key={nominee.id}
                 nominee={nominee}
                 isFullscreen={animationPhase === 'fullscreen' && index === fullscreenIndex}
-                isRevealed={animationPhase !== 'fullscreen' && (index <= currentRevealIndex || animationPhase === 'fadeIn' || animationPhase === 'complete')}
-                isFadedOut={animationPhase === 'fadeOut'}
+                isRevealed={animationPhase !== 'fullscreen' && (index <= currentRevealIndex || animationPhase === 'complete')}
                 isWinner={nominee.id === category.winnerId}
                 winnerRevealed={winnerRevealed}
               />
@@ -186,7 +169,14 @@ const Category = () => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.5, duration: 0.8, type: 'spring' }}
             >
-              <h2 className="winner-category">Ganador - {category.name}</h2>
+              <motion.img
+                src="/Oscar.webp"
+                alt="Oscar Statue"
+                className="trophy-icon"
+                initial={{ scale: 0, rotate: -180 }}
+                animate={{ scale: 1, rotate: 0 }}
+                transition={{ delay: 0.5, duration: 0.6, type: 'spring' }}
+              />
               <motion.h3
                 className="winner-name"
                 initial={{ opacity: 0, y: 20 }}
@@ -195,14 +185,6 @@ const Category = () => {
               >
                 {winner.name}
               </motion.h3>
-              <motion.p
-                className="winner-info"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 1, duration: 0.6 }}
-              >
-                {winner.info}
-              </motion.p>
             </motion.div>
           )}
         </AnimatePresence>
