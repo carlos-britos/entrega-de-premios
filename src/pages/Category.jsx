@@ -7,6 +7,7 @@ import useConfetti from '../hooks/useConfetti';
 import useAudio from '../hooks/useAudio';
 import useRevealedCategories from '../hooks/useRevealedCategories';
 import categoriesData from '../data/categories.json';
+import oscarImage from '/Oscar.webp';
 import './Category.css';
 
 const Category = () => {
@@ -170,7 +171,7 @@ const Category = () => {
               transition={{ delay: 0.5, duration: 0.8, type: 'spring' }}
             >
               <motion.img
-                src="/Oscar.webp"
+                src={oscarImage}
                 alt="Oscar Statue"
                 className="trophy-icon"
                 initial={{ scale: 0, rotate: -180 }}

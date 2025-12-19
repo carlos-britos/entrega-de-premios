@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useParticles } from '../context/ParticlesContext';
 import categoriesData from '../data/categories.json';
+import oscarImage from '/Oscar.webp';
 import './Home.css';
 
 const Home = () => {
@@ -34,7 +35,7 @@ const Home = () => {
           transition={{ delay: 0.5, duration: 1.2, type: 'spring', stiffness: 80 }}
         >
           <img 
-            src="/Oscar.webp" 
+            src={oscarImage}
             alt="Oscar Statue" 
             className="oscar-statue"
           />
