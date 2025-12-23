@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import NomineeCard from '../components/NomineeCard';
@@ -9,6 +9,10 @@ import useRevealedCategories from '../hooks/useRevealedCategories';
 import categoriesData from '../data/categories.json';
 import oscarImage from '/Oscar.webp';
 import './Category.css';
+
+const isVideo = (path) => {
+  return path.toLowerCase().match(/\.(mp4|webm|ogg)$/);
+};
 
 const Category = () => {
   const { categoryId } = useParams();
@@ -46,6 +50,15 @@ const Category = () => {
 
     // FASE 1: Mostrar cada nominado en pantalla completa
     if (animationPhase === 'fullscreen') {
+      // DEBUG: Pausar en el primer nominado
+      // if (fullscreenIndex === 0) return;
+
+      const currentNominee = category?.nominees?.[fullscreenIndex];
+      const isCurrentVideo = currentNominee && (!!currentNominee.video || isVideo(currentNominee.image));
+
+      // Si es video, NO usamos timer. Esperamos al evento onEnded.
+      if (isCurrentVideo) return;
+
       const timer = setTimeout(() => {
         if (fullscreenIndex < totalNominees - 1) {
           setFullscreenIndex(prev => prev + 1);
@@ -86,6 +99,19 @@ const Category = () => {
       fireConfetti();
     }, 1500);
   };
+
+  const handleVideoEnd = useCallback(() => {
+    if (animationPhase === 'fullscreen') {
+      const totalNominees = category?.nominees?.length || 0;
+      if (fullscreenIndex < totalNominees - 1) {
+        setFullscreenIndex(prev => prev + 1);
+      } else {
+         // Terminó fullscreen, pasar a fase secuencial
+         setAnimationPhase('sequential');
+         setCurrentRevealIndex(-1);
+      }
+    }
+  }, [animationPhase, fullscreenIndex, category]);
 
   if (!category) {
     return (
@@ -137,6 +163,7 @@ const Category = () => {
                 isRevealed={animationPhase !== 'fullscreen' && (index <= currentRevealIndex || animationPhase === 'complete')}
                 isWinner={nominee.id === category.winnerId}
                 winnerRevealed={winnerRevealed}
+                onVideoEnd={handleVideoEnd}
               />
             ))}
           </div>
@@ -174,9 +201,13 @@ const Category = () => {
                 src={oscarImage}
                 alt="Oscar Statue"
                 className="trophy-icon"
-                initial={{ scale: 0, rotate: -180 }}
-                animate={{ scale: 1, rotate: 0 }}
-                transition={{ delay: 0.5, duration: 0.6, type: 'spring' }}
+                initial={{ scale: 0, opacity: 0, y: 50 }}
+                animate={{ scale: 1, opacity: 1, y: 0 }}
+                transition={{
+                  delay: 0.3,
+                  duration: 1.2,
+                  ease: [0.22, 1, 0.36, 1]
+                }}
               />
               <motion.h3
                 className="winner-name"

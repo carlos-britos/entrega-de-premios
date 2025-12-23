@@ -1,9 +1,25 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import './NomineeCard.css';
 
-const NomineeCard = ({ nominee, isFullscreen, isRevealed, isWinner, winnerRevealed }) => {
+const isVideo = (path) => path.toLowerCase().match(/\.(mp4|webm|ogg)$/);
+
+const NomineeCard = ({ nominee, isFullscreen, isRevealed, isWinner, winnerRevealed, onVideoEnd }) => {
   const [imageError, setImageError] = useState(false);
+  const videoRef = useRef(null);
+
+  // Construir ruta de imagen/video con el base path de Vite
+  const getAssetPath = (path) => {
+    if (!path) return undefined;
+    return path.startsWith('/') ? `${import.meta.env.BASE_URL}${path.slice(1)}` : path;
+  };
+
+  const imageSrc = getAssetPath(nominee.image);
+  const videoSrc = getAssetPath(nominee.video);
+
+  const finalVideoSrc = videoSrc || (isVideo(imageSrc || '') ? imageSrc : undefined);
+  // Solo usar poster si hay video explícito Y la imagen no es un video
+  const finalPosterSrc = videoSrc && !isVideo(imageSrc || '') ? imageSrc : undefined;
 
   // Determinar qué clase aplicar según el estado
   const getCardClasses = () => {
@@ -21,6 +37,13 @@ const NomineeCard = ({ nominee, isFullscreen, isRevealed, isWinner, winnerReveal
     return 1;
   };
 
+  useEffect(() => {
+    if (isFullscreen && videoRef.current) {
+      videoRef.current.currentTime = 0;
+      videoRef.current.play().catch(e => console.log("Autoplay failed", e));
+    }
+  }, [isFullscreen]);
+
   return (
     <motion.div
       className={getCardClasses()}
@@ -32,12 +55,24 @@ const NomineeCard = ({ nominee, isFullscreen, isRevealed, isWinner, winnerReveal
       <div className="nominee-card-inner">
         <div className="nominee-image-container">
           {!imageError ? (
-            <img
-              src={nominee.image}
-              alt={nominee.name}
-              className="nominee-image"
-              onError={() => setImageError(true)}
-            />
+            (finalVideoSrc && (isFullscreen || isVideo(imageSrc || ''))) ? (
+              <video
+                ref={videoRef}
+                src={finalVideoSrc}
+                poster={finalPosterSrc}
+                className="nominee-image nominee-video"
+                muted={false} 
+                playsInline
+                onEnded={onVideoEnd}
+              />
+            ) : (
+              <img
+                src={imageSrc}
+                alt={nominee.name}
+                className="nominee-image"
+                onError={() => setImageError(true)}
+              />
+            )
           ) : (
             <div className="nominee-image-placeholder">
               <span className="placeholder-icon">🎬</span>
