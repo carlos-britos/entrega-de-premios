@@ -3,8 +3,8 @@
   "eventYear": "2025",
   "categories": [
     {
-      "id": "mejor-pelicula",
-      "name": "Mejor Película",
+      "id": "claudia",
+      "name": "La más charlatana",
       "nominees": [
         { "id": "clau-1", "name": "Dory", "video": "/images/nominees/clau/1.mp4", "image": "/images/nominees/clau/1.jpg", "info": "" },
         { "id": "clau-2", "name": "Burro", "video": "/images/nominees/clau/2.mp4", "image": "/images/nominees/clau/2.jpg", "info": "" },
@@ -13,229 +13,215 @@
       "winnerId": "clau-3"
     },
     {
-      "id": "mejor-maquillaje",
-      "name": "Mejor Maquillaje y Peinado",
+      "id": "cari",
+      "name": "La persona con menos filtro",
       "nominees": [
-        { "id": "maq-1", "name": "Moria Casán", "image": "/images/nominees/cari/1.webp", "info": "" },
-        { "id": "maq-2", "name": "Graciela Alfano", "image": "/images/nominees/cari/2.webp", "info": "" },
-        { "id": "maq-3", "name": "Cari", "image": "/images/nominees/cari/3.jpeg", "info": "" }
+        { "id": "cari-1", "name": "Moria Casán", "image": "/images/nominees/cari/1.webp", "info": "" },
+        { "id": "cari-2", "name": "Graciela Alfano", "image": "/images/nominees/cari/2.webp", "info": "" },
+        { "id": "cari-3", "name": "Cari", "image": "/images/nominees/cari/3.jpeg", "info": "" }
       ],
-      "winnerId": "maq-3"
+      "winnerId": "cari-3"
     },
     {
-      "id": "mejor-vestuario",
-      "name": "Mejor Diseño de Vestuario",
+      "id": "carlos_padre",
+      "name": "El catador de cervezas",
       "nominees": [
-        { "id": "ves-1", "name": "Jürgen", "image": "/images/nominees/carlos_padre/1.mp4", "info": "" },
-        { "id": "ves-2", "name": "Barney Gómez", "image": "/images/nominees/carlos_padre/2.mp4", "info": "" },
-        { "id": "ves-3", "name": "Oreja", "image": "/images/nominees/carlos_padre/3.mp4", "info": "" }
+        { "id": "carlos_padre-1", "name": "Jürgen", "image": "/images/nominees/carlos_padre/1.mp4", "info": "" },
+        { "id": "carlos_padre-2", "name": "Barney Gómez", "image": "/images/nominees/carlos_padre/2.mp4", "info": "" },
+        { "id": "carlos_padre-3", "name": "Oreja", "image": "/images/nominees/carlos_padre/3.mp4", "info": "" }
       ],
-      "winnerId": "ves-3"
+      "winnerId": "carlos_padre-3"
     },
     {
-      "id": "mejor-actor",
-      "name": "Mejor Actor",
+      "id": "bibiana",
+      "name": "La más bruja",
       "nominees": [
-        { "id": "act-1", "name": "La bruja del 71", "image": "/images/nominees/bibiana/1.png", "info": "" },
-        { "id": "act-2", "name": "Harry Potter", "image": "/images/nominees/bibiana/2.webp", "info": "" },
-        { "id": "act-3", "name": "Bibiana", "image": "/images/nominees/bibiana/3.jpeg", "info": "" }
+        { "id": "bibiana-1", "name": "La bruja del 71", "image": "/images/nominees/bibiana/1.png", "info": "" },
+        { "id": "bibiana-2", "name": "Harry Potter", "image": "/images/nominees/bibiana/2.webp", "info": "" },
+        { "id": "bibiana-3", "name": "Bibiana", "image": "/images/nominees/bibiana/3.jpeg", "info": "" }
       ],
-      "winnerId": "act-2"
+      "winnerId": "bibiana-3"
     },
     {
-      "id": "mejor-actor",
-      "name": "Abuelo",
+      "id": "abuelo",
+      "name": "El mejor cantante",
       "nominees": [
-        { "id": "act-1", "name": "La bruja del 71", "image": "/images/nominees/bibiana/1.png", "info": "" },
-        { "id": "act-2", "name": "Harry Potter", "image": "/images/nominees/bibiana/2.webp", "info": "" },
-        { "id": "act-3", "name": "Bibiana", "image": "/images/nominees/bibiana/3.jpeg", "info": "" }
+        { "id": "abuelo-1", "name": "Cristian Castro", "image": "/images/nominees/abuelo/1.jpeg", "info": "" },
+        { "id": "abuelo-2", "name": "Sandro", "image": "/images/nominees/abuelo/2.jpeg", "info": "" },
+        { "id": "abuelo-3", "name": "Abuelo Carlos", "video": "/images/nominees/abuelo/3.mp4", "image": "/images/nominees/abuelo/3.jpeg", "info": "" }
       ],
-      "winnerId": "act-2"
+      "winnerId": "abuelo-3"
     },
     {
-      "id": "mejor-pelicula",
-      "name": "Mejor Película",
+      "id": "camila",
+      "name": "La ultima palabra",
       "nominees": [
-        { "id": "nom-1", "name": "Remy", "image": "/images/nominees/mica_nico/1.jpg", "info": "" },
-        { "id": "nom-2", "name": "Donato", "image": "/images/nominees/mica_nico/2.png", "info": "" },
-        { "id": "nom-3", "name": "Mica", "image": "/images/nominees/mica_nico/3.jpeg", "info": "" }
+        { "id": "camila-1", "name": "Moon", "image": "/images/nominees/camila/1.mp4", "info": "" },
+        { "id": "camila-2", "name": "Laura Bozzo", "image": "/images/nominees/camila/2.mp4", "info": "" },
+        { "id": "camila-3", "name": "Camila", "image": "/images/nominees/camila/3.jpg", "info": "" }
       ],
-      "winnerId": "nom-3"
+      "winnerId": "camila-3"
     },
     {
-      "id": "mejor-director",
-      "name": "Mejor Director",
+      "id": "esteban",
+      "name": "El outfit más extravagante",
       "nominees": [
-        { "id": "dir-1", "name": "Ángel de Brito", "image": "/images/nominees/mica_prima/1.jpg", "info": "" },
-        { "id": "dir-2", "name": "Yanina Latorre", "image": "/images/nominees/mica_prima/2.jpg", "info": "" },
-        { "id": "dir-3", "name": "Mica", "image": "/images/nominees/mica_prima/3.jpeg", "info": "" }
+        { "id": "esteban-1", "name": "Anibal Pachano", "image": "/images/nominees/esteban/1.jpeg", "info": "" },
+        { "id": "esteban-2", "name": "Roberto Piatza", "image": "/images/nominees/esteban/2.jpeg", "info": "" },
+        { "id": "esteban-3", "name": "Esteban", "image": "/images/nominees/esteban/3.jpeg", "info": "" }
       ],
-      "winnerId": "dir-3"
+      "winnerId": "esteban-3"
     },
     {
-      "id": "mejor-actriz",
-      "name": "Mejor Actriz",
+      "id": "seba",
+      "name": "El más chamuyero",
       "nominees": [
-        { "id": "atr-1", "name": "Leo Mattioli", "image": "/images/nominees/nano/1.webp", "info": "" },
-        { "id": "atr-2", "name": "Luis Miguel", "image": "/images/nominees/nano/2.jpg", "info": "" },
-        { "id": "atr-3", "name": "Nano", "image": "/images/nominees/nano/3.mp4", "info": "" }
+        { "id": "seba-1", "name": "Don Ramon", "image": "/images/nominees/seba/1.webp", "info": "" },
+        { "id": "seba-2", "name": "Pesca", "image": "/images/nominees/seba/2.jpg", "info": "" },
+        { "id": "seba-3", "name": "Seba", "image": "/images/nominees/seba/3.jpeg", "info": "" }
       ],
-      "winnerId": "atr-3"
+      "winnerId": "seba-3"
     },
     {
-      "id": "mejor-guion-original",
-      "name": "Mejor Guión Original",
+      "id": "abril",
+      "name": "La más callada",
       "nominees": [
-        { "id": "gui-1", "name": "Carlos Saul", "video": "/images/nominees/marcelo/1.mp4", "image": "/images/nominees/marcelo/1.jpg", "info": "" },
-        { "id": "gui-2", "name": "Marcelo", "video": "/images/nominees/marcelo/2.mp4", "image": "/images/nominees/marcelo/2.jpg", "info": "" },
-        { "id": "gui-3", "name": "Cristian", "video": "/images/nominees/marcelo/3.mp4", "image": "/images/nominees/marcelo/3.jpg", "info": "" }
+        { "id": "abril-1", "name": "El jefe", "image": "/images/nominees/abril/1.mp4", "info": "" },
+        { "id": "abril-2", "name": "Johnny boca cerrada", "image": "/images/nominees/abril/2.mp4", "info": "" },
+        { "id": "abril-3", "name": "Abril", "image": "/images/nominees/abril/3.jpeg", "info": "" }
       ],
-      "winnerId": "gui-2"
+      "winnerId": "abril-3"
     },
     {
-      "id": "mejor-fotografia",
-      "name": "Mejor Fotografía",
+      "id": "ale",
+      "name": "La mejor bailarina",
       "nominees": [
-        { "id": "fot-1", "name": "Don Ramon", "image": "/images/nominees/seba/1.webp", "info": "" },
-        { "id": "fot-2", "name": "Pesca", "image": "/images/nominees/seba/2.jpg", "info": "" },
-        { "id": "fot-3", "name": "Seba", "image": "/images/nominees/seba/3.jpeg", "info": "" }
+        { "id": "ale-1", "name": "Flavio Mendoza", "image": "/images/nominees/ale/1.jpg", "info": "" },
+        { "id": "ale-2", "name": "Hernán Piquín", "image": "/images/nominees/ale/2.jpg", "info": "" },
+        { "id": "ale-3", "name": "Ale", "image": "/images/nominees/ale/3.jpg", "info": "" }
       ],
-      "winnerId": "fot-3"
+      "winnerId": "ale-3"
     },
     {
-      "id": "mejor-musica",
-      "name": "Mejor Música Original",
+      "id": "mia",
+      "name": "La más dormilona",
       "nominees": [
-        { "id": "mus-1", "name": "Gastón", "video": "/images/nominees/gaston/1.mp4", "image": "/images/nominees/gaston/1.jpeg", "info": "" },
-        { "id": "mus-2", "name": "Gastón", "video": "/images/nominees/gaston/2.mp4", "image": "/images/nominees/gaston/2.jpeg", "info": "" },
-        { "id": "mus-3", "name": "Gastón", "video": "/images/nominees/gaston/3.mp4", "image": "/images/nominees/gaston/3.jpeg", "info": "" },
-        { "id": "mus-4", "name": "Gastón", "video": "/images/nominees/gaston/4.mp4", "image": "/images/nominees/gaston/4.jpeg", "info": "" }
+        { "id": "mia-1", "name": "Mía", "image": "/images/nominees/mia/1.jpeg", "info": "" },
+        { "id": "mia-2", "name": "La bella durmiente", "image": "/images/nominees/mia/2.mp4", "info": "" },
+        { "id": "mia-3", "name": "La dani despues de un turno", "image": "/images/nominees/mia/3.jpeg", "info": "" }
       ],
-      "winnerId": "mus-1"
+      "winnerId": "mia-1"
     },
     {
-      "id": "mejor-montaje",
-      "name": "Mejor Montaje",
+      "id": "nano",
+      "name": "El último romantico",
       "nominees": [
-        { "id": "mon-1", "name": "Flavio Mendoza", "image": "/images/nominees/ale/1.jpg", "info": "" },
-        { "id": "mon-2", "name": "Hernán Piquín", "image": "/images/nominees/ale/2.jpg", "info": "" },
-        { "id": "mon-3", "name": "Ale", "image": "/images/nominees/ale/3.jpg", "info": "" }
+        { "id": "nano-1", "name": "Leo Mattioli", "image": "/images/nominees/nano/1.webp", "info": "" },
+        { "id": "nano-2", "name": "Luis Miguel", "image": "/images/nominees/nano/2.jpg", "info": "" },
+        { "id": "nano-3", "name": "Nano", "image": "/images/nominees/nano/3.mp4", "info": "" }
       ],
-      "winnerId": "mon-3"
+      "winnerId": "nano-3"
     },
     {
-      "id": "mejor-efectos",
-      "name": "Mejores Efectos Visuales",
+      "id": "nico",
+      "name": "El más pollera",
       "nominees": [
-        { "id": "efx-1", "name": "El profesor Jirafales", "image": "/images/nominees/nico/1.jpg", "info": "" },
-        { "id": "efx-2", "name": "Dardo Fuseneco", "image": "/images/nominees/nico/2.webp", "info": "" },
-        { "id": "efx-3", "name": "El chino", "image": "/images/nominees/nico/3.jpeg", "info": "" }
+        { "id": "nico-1", "name": "El profesor Jirafales", "image": "/images/nominees/nico/1.jpg", "info": "" },
+        { "id": "nico-2", "name": "Dardo Fuseneco", "image": "/images/nominees/nico/2.webp", "info": "" },
+        { "id": "nico-3", "name": "El chino", "image": "/images/nominees/nico/3.jpeg", "info": "" }
       ],
-      "winnerId": "efx-3"
+      "winnerId": "nico-3"
     },
     {
-      "id": "mejor-sonido",
-      "name": "Mejor Sonido",
+      "id": "mica_nico",
+      "name": "Mejor chef",
       "nominees": [
-        { "id": "son-1", "name": "Anibal Pachano", "image": "/images/nominees/esteban/1.jpeg", "info": "" },
-        { "id": "son-2", "name": "Roberto Piatza", "image": "/images/nominees/esteban/2.jpeg", "info": "" },
-        { "id": "son-3", "name": "Esteban", "image": "/images/nominees/esteban/3.jpeg", "info": "" }
+        { "id": "mica_nico-1", "name": "Remy", "image": "/images/nominees/mica_nico/1.jpg", "info": "" },
+        { "id": "mica_nico-2", "name": "Donato", "image": "/images/nominees/mica_nico/2.png", "info": "" },
+        { "id": "mica_nico-3", "name": "Mica", "image": "/images/nominees/mica_nico/3.jpeg", "info": "" }
       ],
-      "winnerId": "son-3"
+      "winnerId": "mica_nico-3"
     },
     {
-      "id": "mejor-direccion-arte",
-      "name": "Mejor Diseño de Producción",
+      "id": "tomy",
+      "name": "Paladar fino",
       "nominees": [
-        { "id": "art-1", "name": "Dani (la silvina)", "video": "/images/nominees/dani/1.mp4", "image": "/images/nominees/dani/1.jpg", "info": "" },
-        { "id": "art-2", "name": "El perro", "video": "/images/nominees/dani/2.mp4", "image": "/images/nominees/dani/2.webp", "info": "" },
-        { "id": "art-3", "name": "La gallina come milanesas", "image": "/images/nominees/dani/3.mp4", "info": "" }
+        { "id": "tomy-1", "name": "Anton Ego", "image": "/images/nominees/tomy/1.jpeg", "info": "" },
+        { "id": "tomy-2", "name": "Christophe", "image": "/images/nominees/tomy/2.jpeg", "info": "" },
+        { "id": "tomy-3", "name": "Tomy", "image": "/images/nominees/tomy/3.jpg", "info": "" }
       ],
-      "winnerId": "art-1"
+      "winnerId": "tomy-3"
     },
     {
-      "id": "mejor-actor-secundario",
-      "name": "Mejor Actor de Reparto",
+      "id": "pocho",
+      "name": "El más nuevo",
       "nominees": [
-        { "id": "acs-1", "name": "Roberto Méndez", "image": "/images/nominees/placeholder.svg", "info": "Sombras del Ayer" },
-        { "id": "acs-2", "name": "Julián Herrera", "image": "/images/nominees/placeholder.svg", "info": "Entre Dos Mundos" },
-        { "id": "acs-3", "name": "Oscar Villalobos", "image": "/images/nominees/placeholder.svg", "info": "Caminos Cruzados" },
-        { "id": "acs-4", "name": "Martín Agosto", "image": "/images/nominees/placeholder.svg", "info": "La Luz Interior" },
-        { "id": "acs-5", "name": "Rafael Torres", "image": "/images/nominees/placeholder.svg", "info": "Ecos del Silencio" }
+        { "id": "pocho-1", "name": "El auto del chino", "image": "/images/nominees/pocho/1.jpeg", "info": "" },
+        { "id": "pocho-2", "name": "Augusto", "image": "/images/nominees/pocho/2.webp", "info": "" },
+        { "id": "pocho-3", "name": "Pocho", "image": "/images/nominees/pocho/3.jpeg", "info": "" }
       ],
-      "winnerId": "acs-3"
+      "winnerId": "pocho-3"
     },
     {
-      "id": "mejor-actriz-secundaria",
-      "name": "Mejor Actriz de Reparto",
+      "id": "dani",
+      "name": "Blooper del año",
       "nominees": [
-        { "id": "atrs-1", "name": "Patricia Vega", "image": "/images/nominees/placeholder.svg", "info": "El Último Horizonte" },
-        { "id": "atrs-2", "name": "Mónica Herrera", "image": "/images/nominees/placeholder.svg", "info": "Sombras del Ayer" },
-        { "id": "atrs-3", "name": "Daniela Moreno", "image": "/images/nominees/placeholder.svg", "info": "Entre Dos Mundos" },
-        { "id": "atrs-4", "name": "Alejandra Ruiz", "image": "/images/nominees/placeholder.svg", "info": "La Luz Interior" },
-        { "id": "atrs-5", "name": "Inés Castillo", "image": "/images/nominees/placeholder.svg", "info": "Voces en la Niebla" }
+        { "id": "dani-1", "name": "Dani", "video": "/images/nominees/dani/1.mp4", "image": "/images/nominees/dani/1.jpg", "info": "" },
+        { "id": "dani-2", "name": "El perro", "video": "/images/nominees/dani/2.mp4", "image": "/images/nominees/dani/2.webp", "info": "" },
+        { "id": "dani-3", "name": "La gallina come milanesas", "image": "/images/nominees/dani/3.mp4", "info": "" }
       ],
-      "winnerId": "atrs-2"
+      "winnerId": "dani-1"
     },
     {
-      "id": "mejor-pelicula-animada",
-      "name": "Mejor Película Animada",
+      "id": "gaston",
+      "name": "El yeta del año",
       "nominees": [
-        { "id": "ani-1", "name": "El Viaje de Luna", "image": "/images/nominees/placeholder.svg", "info": "Estudio: Pixar" },
-        { "id": "ani-2", "name": "Aventuras en el Bosque", "image": "/images/nominees/placeholder.svg", "info": "Estudio: Ghibli" },
-        { "id": "ani-3", "name": "Robots y Sueños", "image": "/images/nominees/placeholder.svg", "info": "Estudio: DreamWorks" },
-        { "id": "ani-4", "name": "El Reino Perdido", "image": "/images/nominees/placeholder.svg", "info": "Estudio: Disney" },
-        { "id": "ani-5", "name": "Historias de Papel", "image": "/images/nominees/placeholder.svg", "info": "Estudio: Laika" }
+        { "id": "gaston-1", "name": "Gastón", "video": "/images/nominees/gaston/1.mp4", "image": "/images/nominees/gaston/1.jpeg", "info": "" },
+        { "id": "gaston-2", "name": "Gastón", "video": "/images/nominees/gaston/2.mp4", "image": "/images/nominees/gaston/2.jpeg", "info": "" },
+        { "id": "gaston-3", "name": "Gastón", "video": "/images/nominees/gaston/3.mp4", "image": "/images/nominees/gaston/3.jpeg", "info": "" },
+        { "id": "gaston-4", "name": "Gastón", "video": "/images/nominees/gaston/4.mp4", "image": "/images/nominees/gaston/4.jpeg", "info": "" }
       ],
-      "winnerId": "ani-2"
+      "winnerId": "gaston-1"
     },
     {
-      "id": "mejor-documental",
-      "name": "Mejor Documental",
+      "id": "mica-prima",
+      "name": "La más venenosa",
       "nominees": [
-        { "id": "doc-1", "name": "Voces del Planeta", "image": "/images/nominees/placeholder.svg", "info": "Director: David Attenborough" },
-        { "id": "doc-2", "name": "La Historia Olvidada", "image": "/images/nominees/placeholder.svg", "info": "Director: Ken Burns" },
-        { "id": "doc-3", "name": "Fronteras Invisibles", "image": "/images/nominees/placeholder.svg", "info": "Director: Ava DuVernay" },
-        { "id": "doc-4", "name": "Océanos de Esperanza", "image": "/images/nominees/placeholder.svg", "info": "Director: James Cameron" },
-        { "id": "doc-5", "name": "Cambios Silenciosos", "image": "/images/nominees/placeholder.svg", "info": "Director: Werner Herzog" }
+        { "id": "mica-prima-1", "name": "Ángel de Brito", "image": "/images/nominees/mica_prima/1.jpg", "info": "" },
+        { "id": "mica-prima-2", "name": "Yanina Latorre", "image": "/images/nominees/mica_prima/2.jpg", "info": "" },
+        { "id": "mica-prima-3", "name": "Mica", "image": "/images/nominees/mica_prima/3.jpeg", "info": "" }
       ],
-      "winnerId": "doc-1"
+      "winnerId": "mica-prima-3"
     },
     {
-      "id": "mejor-pelicula-extranjera",
-      "name": "Mejor Película Internacional",
+      "id": "cris",
+      "name": "El más impuntual",
       "nominees": [
-        { "id": "ext-1", "name": "La Vida en Colores", "image": "/images/nominees/placeholder.svg", "info": "País: Francia" },
-        { "id": "ext-2", "name": "Memorias de Tokio", "image": "/images/nominees/placeholder.svg", "info": "País: Japón" },
-        { "id": "ext-3", "name": "El Río de la Vida", "image": "/images/nominees/placeholder.svg", "info": "País: India" },
-        { "id": "ext-4", "name": "Invierno en Berlín", "image": "/images/nominees/placeholder.svg", "info": "País: Alemania" },
-        { "id": "ext-5", "name": "Pasión Flamenca", "image": "/images/nominees/placeholder.svg", "info": "País: España" }
+        { "id": "cris-1", "name": "Cristian", "image": "/images/nominees/cris/1.jpeg", "info": "" },
+        { "id": "cris-2", "name": "MR. Bean", "image": "/images/nominees/cris/2.jpeg", "info": "" },
+        { "id": "cris-3", "name": "Pesca", "image": "/images/nominees/cris/3.jpg", "info": "" }
       ],
-      "winnerId": "ext-2"
+      "winnerId": "cris-1"
     },
     {
-      "id": "mejor-cancion",
-      "name": "Mejor Canción Original",
+      "id": "pesca",
+      "name": "El más curioso",
       "nominees": [
-        { "id": "can-1", "name": "Dreams of Tomorrow", "image": "/images/nominees/placeholder.svg", "info": "Artista: Lady Gaga" },
-        { "id": "can-2", "name": "Rise Again", "image": "/images/nominees/placeholder.svg", "info": "Artista: Beyoncé" },
-        { "id": "can-3", "name": "Into the Light", "image": "/images/nominees/placeholder.svg", "info": "Artista: Adele" },
-        { "id": "can-4", "name": "Forever More", "image": "/images/nominees/placeholder.svg", "info": "Artista: Taylor Swift" },
-        { "id": "can-5", "name": "Unbreakable", "image": "/images/nominees/placeholder.svg", "info": "Artista: Bruno Mars" }
+        { "id": "pesca-1", "name": "Fran", "image": "/images/nominees/pesca/1.mp4", "info": "" },
+        { "id": "pesca-2", "name": "Manuel Huedo", "image": "/images/nominees/pesca/2.mp4", "info": "" },
+        { "id": "pesca-3", "name": "Pesca", "video": "/images/nominees/pesca/3.mp4", "image": "/images/nominees/pesca/3.jpg", "info": "" }
       ],
-      "winnerId": "can-3"
+      "winnerId": "pesca-3"
     },
     {
-      "id": "mejor-guion-adaptado",
-      "name": "Mejor Guión Adaptado",
+      "id": "marcelo",
+      "name": "El perreo del año",
       "nominees": [
-        { "id": "guia-1", "name": "Basado en Hechos Reales", "image": "/images/nominees/placeholder.svg", "info": "Escritor: Aaron Sorkin" },
-        { "id": "guia-2", "name": "La Novela Cobró Vida", "image": "/images/nominees/placeholder.svg", "info": "Escritor: Eric Roth" },
-        { "id": "guia-3", "name": "De Cómic a Cine", "image": "/images/nominees/placeholder.svg", "info": "Escritor: Drew Goddard" },
-        { "id": "guia-4", "name": "Memorias Adaptadas", "image": "/images/nominees/placeholder.svg", "info": "Escritor: Tony Kushner" },
-        { "id": "guia-5", "name": "Nueva Versión", "image": "/images/nominees/placeholder.svg", "info": "Escritor: Gillian Flynn" }
+        { "id": "marcelo-1", "name": "El abuelo", "video": "/images/nominees/marcelo/1.mp4", "image": "/images/nominees/marcelo/1.jpg", "info": "" },
+        { "id": "marcelo-2", "name": "Marcelo", "video": "/images/nominees/marcelo/2.mp4", "image": "/images/nominees/marcelo/2.jpg", "info": "" },
+        { "id": "marcelo-3", "name": "Cristian", "video": "/images/nominees/marcelo/3.mp4", "image": "/images/nominees/marcelo/3.jpg", "info": "" }
       ],
-      "winnerId": "guia-1"
+      "winnerId": "marcelo-2"
     }
   ]
 }
